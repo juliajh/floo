@@ -1,6 +1,6 @@
 {% load static %}
 <!doctype html>
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -20,31 +20,7 @@
     <link rel="stylesheet" href="{% static 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' %}">
 </head>
 <body>
-    {% include 'shared/navbar.html' %}
-    {% block container %}
-
-    {% endblock %}
-    {% include 'shared/footer.html' %}
-
-    <script src="{% static 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js' %}"></script>
-    <script>window.jQuery || document.write('<script src="{% static 'js/jquery.min.js'%}"> </script>')</script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
-    <script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
-    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
-    <script src="{% static 'js/retina.min.js' %}"></script>
-    <script src="{% static 'js/modernizr.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
-    
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-       
-        ga('create', 'UA-XXXX-X');
-        ga('send', 'pageview');
-    </script>
+    <h3>mbti main입니다.</h3>
+<a href="{% url 'mbti1' %}"><button>mbti시작하기</button></a>
 </body>
 </html>

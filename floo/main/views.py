@@ -8,6 +8,3 @@ def main(request):
     
     return render(request, 'main.html')
 
-def mbti1(request):
-    return render(request, 'mbti1.html')
-
