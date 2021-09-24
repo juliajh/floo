@@ -3,11 +3,7 @@ from account.models import CustomUser
 from .models import Bill, Debate
 
 def home(request):
-
     return render(request,'home.html')
-
-
-
 
 def bill_detail(request,bill_id):
 
